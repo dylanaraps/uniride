@@ -173,7 +173,7 @@ main {
   transform: translate(-100%, 0);
   transition: transform .5s cubic-bezier(.77, .2, .05, 1);
   width: 50vw;
-  height: 100%;
+  height: 100vh;
   top: -$nav-height - $nav-margin-top;
 
   li {

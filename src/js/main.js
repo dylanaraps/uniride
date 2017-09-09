@@ -2,6 +2,9 @@ function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: -34.397, lng: 150.644},
         disableDefaultUI: true,
+        draggable: true,
+        disableDoubleClickZoom: false,
+        gestureHandling: "greedy",
         zoom: 14,
         styles: [
     {
