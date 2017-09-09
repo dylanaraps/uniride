@@ -1,0 +1,36 @@
+{
+  "name": "dylanaraps",
+  "version": "1.0.0",
+  "description": "Static Website for me! (Dylan Araps)",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "browser-sync": "^2.18.6",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "*",
+    "gulp-clean-css": "*",
+    "gulp-concat-css": "*",
+    "gulp-exec": "^2.1.3",
+    "gulp-file-include": "*",
+    "gulp-imagemin": "*",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-rename": "*",
+    "gulp-sass": "*",
+    "gulp-save": "*",
+    "gulp-sitemap": "*",
+    "gulp-uglify": "*",
+    "gulp-uncss": "*",
+    "hamburgers": "^0.9.1",
+    "imagemin-mozjpeg": "*",
+    "imagemin-pngquant": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dylanaraps/dylanaraps.github.io.git"
+  },
+  "author": "Dylan Araps",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dylanaraps/dylanaraps.github.io/issues"
+  },
+  "homepage": "https://github.com/dylanaraps/dylanaraps.github.io"
+}

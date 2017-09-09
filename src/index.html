@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>uniRIDE</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/main.css">
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAScuqh2AqKuYcaE4aBnaqbkxIaMr7pwBE&callback=initMap"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </head>
+
+    <body>
+        <div class="loading-screen">
+            <img src="img/logo3.svg" alt="logo" class="loading-logo">
+        </div>
+
+        <nav role="navigation" class="nav-top">
+            <a class="nav-logo"><img src="img/logo2.svg" alt="logo"></a>
+            <div class="nav-burger">
+                <input type="checkbox" />
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <ul class="nav-menu">
+                    <li><a href="#">Payment</a></li>
+                    <li><a href="#">Ride History</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Settings</a></li>
+
+                    <li><a href="#">Sign Out</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main>
+            <input id="destination" type="text" placeholder="Let's go!">
+            <input class="destination-checkbox" name="dest" type="radio" />
+            <input class="destination-checkbox2" name="dest" type="radio" />
+            <div class="destination">
+                <span class="back">←</span>
+                <div class="destination-inputs">
+                    <input id="location" type="text" placeholder="Current Location" class="address">
+                    <input id="uni" type="text" placeholder="Where do you study?" class="address">
+                </div>
+
+                <hr class="list-break">
+
+                <ul class="unis">
+                    <li>Swinburne University of Technology</li>
+                    <sup>5km away</sup>
+                    <hr class="uni-break">
+                    <li>Monash University</li>
+                    <sup>10km away</sup>
+                    <hr class="uni-break">
+                    <li>Latrobe University</li>
+                    <sup>12km away</sup>
+                    <hr class="uni-break">
+                    <li>RMIT</li>
+                    <sup>20km away</sup>
+                    <hr class="uni-break">
+                    <li>Melbourne University</li>
+                    <sup>50km away</sup>
+                    <hr class="uni-break">
+                    <li>ACU Melbourne</li>
+                    <sup>50km away</sup>
+                    <hr class="uni-break">
+                    <li>Swinburne Wantirna</li>
+                    <sup>150km away</sup>
+                </ul>
+            </div>
+            <div class="promo"></div>
+            <div id="map"></div>
+        <main>
+
+        <style>
+            a[href^="http://maps.google.com/maps"],
+            a[href^="https://maps.google.com/maps"],
+            a[href^="https://www.google.com/maps"] {
+              display: none !important;
+            }
+
+            .gmnoprint:not(.gm-bundled-control) {
+              display: none;
+            }
+
+            .gm-bundled-control .gmnoprint {
+              display: block;
+            }
+        </style>
+    </body>
+</html>
