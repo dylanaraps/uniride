@@ -16,7 +16,7 @@ $black: #4e4e4e;
   animation-delay: 2.5s;
   animation-fill-mode:forwards;
   background-color: #fff;
-  height: 100vh;
+  height: 100%;
   left: 0;
   position: absolute;
   top: 0;
@@ -58,7 +58,7 @@ main {
 // Map {{{
 
 #map {
-  height: 100vh;
+  height: 100%;
   left: 0;
   position: absolute;
   top: 0;
@@ -173,7 +173,7 @@ main {
   transform: translate(-100%, 0);
   transition: transform .5s cubic-bezier(.77, .2, .05, 1);
   width: 50vw;
-  height: 100vh;
+  height: 100%;
   top: -$nav-height - $nav-margin-top;
 
   li {
