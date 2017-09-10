@@ -239,8 +239,8 @@ function initMap() {
         ]
     }
 ]
-
     });
+    infoWindow = new google.maps.InfoWindow;
 
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function(position) {
@@ -249,6 +249,9 @@ function initMap() {
                 lng: position.coords.longitude
             };
 
+            infoWindow.setPosition(pos);
+            infoWindow.setContent('You are here.');
+            infoWindow.open(map);
             map.setCenter(pos);
         });
     }
