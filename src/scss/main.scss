@@ -86,8 +86,6 @@ h1 {
   color: $black;
   font-family: Trebuchet MS;
   font-size: calc(1.3em + 1vmin);
-  text-align: justify;
-  text-align-last: center;
 }
 
 .rating {
@@ -393,6 +391,10 @@ input {
 
   &:hover {
     height: 25vh;
+  }
+
+  h1 {
+    text-align: center;
   }
 }
 
