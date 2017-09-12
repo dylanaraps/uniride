@@ -1,3 +1,9 @@
+var fixed = document.getElementById('fixed');
+
+fixed.addEventListener('touchmove', function(e) {
+        e.preventDefault();
+}, false);
+
 function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: -34.397, lng: 150.644},
