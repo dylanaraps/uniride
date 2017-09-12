@@ -6,6 +6,7 @@ $nav-margin-top: 5vh;
 $nav-menu-bg: #fff;
 
 $black: #4e4e4e;
+$white: #fff;
 
 // }}}
 
@@ -14,8 +15,8 @@ $black: #4e4e4e;
 .loading-screen {
   animation: fade-away .75s;
   animation-delay: 2.5s;
-  animation-fill-mode:forwards;
-  background-color: #fff;
+  animation-fill-mode: forwards;
+  background-color: $white;
   height: 100%;
   left: 0;
   position: absolute;
@@ -24,14 +25,14 @@ $black: #4e4e4e;
   z-index: 1000;
 
   img {
-    animation-fill-mode:forwards;
+    animation-fill-mode: forwards;
     animation: bounce .75s 3;
     bottom: 100;
     filter: brightness(200%);
     left: 0;
     margin: auto;
     max-width: 150px;
-    opacity: 0.75;
+    opacity: .75;
     position: absolute;
     right: 0;
     top: 0;
@@ -53,26 +54,26 @@ main {
   margin-top: $nav-height * 2 + 8;
 }
 
-html, body {
-    position: fixed;
-}
+/* html, body { */
+/*     position: fixed; */
+/* } */
 
-html, body {
-    position: relative;
-    overflow: hidden;
-}
+/* html, body { */
+/*     position: relative; */
+/*     overflow: hidden; */
+/* } */
 
-body {
-    position: fixed;
-    overflow: hidden;
-}
+/* body { */
+/*     position: fixed; */
+/*     overflow: hidden; */
+/* } */
 
-body {
-    position: fixed;
-    height: 100%;
-    overflow: hidden;
-    width: 100%;
-}
+/* body { */
+/*     position: fixed; */
+/*     height: 100%; */
+/*     overflow: hidden; */
+/*     width: 100%; */
+/* } */
 
 // }}}
 
@@ -339,8 +340,8 @@ input {
 
   input {
     left: -100;
-    top: 30;
     opacity: 0;
+    top: 30;
   }
 }
 
@@ -381,7 +382,7 @@ input {
   background-color: #fff;
   bottom: 0;
   box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.33);
-  height: calc(8vh + 1em);
+  height: calc(8vmax + 1em);
   left: 0;
   margin: 0 auto;
   max-width: 300px;
@@ -391,7 +392,7 @@ input {
   width: 90vw;
 
   &:hover {
-    height: 25vh;
+    height: 25vmax;
   }
 
   h1 {
@@ -427,7 +428,7 @@ input {
 
 @keyframes fade-away {
   from {
-    opacity: 0.75;
+    opacity: .75;
   }
 
   to {
