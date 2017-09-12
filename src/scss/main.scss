@@ -54,6 +54,13 @@ main {
   margin-top: $nav-height * 2 + 8;
 }
 
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+
 /* html, body { */
 /*     position: fixed; */
 /* } */
