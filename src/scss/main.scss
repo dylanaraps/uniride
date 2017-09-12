@@ -54,6 +54,27 @@ main {
   margin-top: $nav-height * 2 + 8;
 }
 
+html, body {
+    position: fixed;
+}
+
+html, body {
+    position: relative;
+    overflow: hidden;
+}
+
+body {
+    position: fixed;
+    overflow: hidden;
+}
+
+body {
+    position: fixed;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+
 // }}}
 
 // Typography {{{
@@ -298,7 +319,6 @@ input {
   padding: 0;
   position: relative;
   z-index: 11000;
-  -webkit-overflow-scrolling: touch;
 
   li {
     margin: 0 50px;
