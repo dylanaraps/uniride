@@ -319,6 +319,7 @@ input {
   padding: 0;
   position: relative;
   z-index: 11000;
+  -webkit-overflow-scrolling: touch;
 
   li {
     margin: 0 50px;
